@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Garage">
+	
+	
+	
+	<parameter name="URL" value=""></parameter>
+    <test thread-count="1" name="Login">
+    <classes>
+      <class name="EatasamAutomation.Garage.LandingScreen"/>
+
+    </classes>
+  </test>
+  
+  
+  
+      <test thread-count="1" name="MyCars">
+    <classes>
+      <class name="EatasamAutomation.Garage.AddCar"/>
+
+    </classes>
+  </test>
+  
+  
+    <!--    <test thread-count="1" name="More">
+    <classes>
+      <class name="EatasamAutomation.Garage.Settings"/>
+
+    </classes>
+  </test>*/-->
+  
+  <!-- Test -->
+</suite> <!-- Suite -->

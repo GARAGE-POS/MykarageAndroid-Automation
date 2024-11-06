@@ -107,7 +107,7 @@ public class AddCar {
             options.setDeviceName("Pixel");
             options.setApp("C://Users//eatas//eclipse-workspace//Garage_CustomerApp//src//test//java//resources//app-staging_azure_new.apk");
             options.setCapability("appWaitForLaunch", "false");
-            driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
+            driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), options);
 
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(1000));
 

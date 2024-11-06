@@ -67,9 +67,11 @@ public class LandingScreen {
         try {
             UiAutomator2Options options = new UiAutomator2Options();
             options.setDeviceName("Pixel");
-            options.setApp("C://Users//eatas//eclipse-workspace//Garage_CustomerApp//src//test//java//resources//app-staging_azure_new.apk");
+            options.setApp(System.getProperty("user.dir") + "//src//test//java//resources//app-staging_azure_new.apk");
+
             options.setCapability("appWaitForLaunch", "false");
-            driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), options);
+            driver = new AndroidDriver(new URL("http://192.168.8.125:4723/wd/hub"), options);
+
 
             Thread.sleep(10000);
             long startTime, endTime;
